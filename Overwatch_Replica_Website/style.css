@@ -1,0 +1,309 @@
+/* Resetting margin, padding, and setting a default font for the entire webpage */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Header styles */
+.header {
+    min-height: 100vh; /* Set minimum height to cover the entire viewport height */
+    width: 100%; /* Make sure the header stretches to full width */
+    /* Use a linear gradient over the background image for better text visibility */
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Overwatch_backgorund_homeP.jpg); 
+    background-position: center;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    position: relative; /* Set position to relative for absolute positioned children elements */
+}
+
+/* Navigation styles */
+nav {
+    display: flex; /* Use flexbox for easier layout management */
+    padding: 2% 6%; /* Add some padding for spacing */
+    justify-content: space-between; /* Space out the child elements evenly */
+    align-items: center; /* Vertically center align the child elements */
+}
+
+nav img {
+    width: 150px; /* Set a fixed width for the nav logo */
+}
+
+.nav-links {
+    flex: 1; /* Allow the nav links to grow and occupy available space */
+    text-align: right; /* Right align the nav links */
+}
+
+/* Nav links list styles */
+.nav-links ul li {
+    color: #fff; /* Set text color to white */
+    list-style: none; /* Remove default bullet points */
+    display: inline-block; /* Display list items in a line */
+    padding: 8px 12px; /* Add some padding around each link for better spacing */
+    position: relative; /* Set position to relative for pseudo-elements */
+}
+
+.nav-links ul li a {
+    color: #fff; /* Set anchor color to white */
+    text-decoration: none; /* Remove underlines from the links */
+    font-size: 13px; /* Set font size of the links */
+}
+
+/* Add a dynamic underline effect on hover for nav links */
+.nav-links ul li::after {
+    content: '';
+    width: 0%; /* Start width at 0 for the animation effect */
+    height: 2px; /* Set a fixed height for the underline */
+    background: #f44336; /* Color of the underline */
+    display: block;
+    margin: auto;
+    transition: 0.5s; /* Smooth transition for the hover effect */
+}
+
+.nav-links ul li:hover::after {
+    width: 100%; /* On hover, the underline stretches to full width */
+}
+
+/* Text box styles placed over the header background */
+.text-box {
+    color: #fff; /* Set text color to white */
+    width: 90%; 
+    position: absolute; /* Absolutely position the text box relative to its parent */
+    top: 50%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the element's own size */
+    text-align: center; 
+}
+
+.text-box h1{
+    font-size:59px;
+}
+.test-box p{
+    margin:10px 0 40px;
+    padding:12px 34px;
+    font-size: 14px;
+    color:#fff
+}
+
+.Download-btn{
+    text-decoration:none;
+    color:#fff;
+    display:inline-block;
+    border: 1px solid #fff;
+    padding:12px 34px;
+    font-size: 13px;
+    position: relative;
+    background:transparent;
+    cursor:pointer;
+}
+.Download-btn:hover{
+    border :1px solid #f44336;
+    background:#f44336;
+    transition:1s;
+
+}
+
+nav .fas{
+    display:none;
+}
+
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size:27px;
+    }
+
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links{
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align:left;
+        z-index:2;
+        position: absolute;
+        background:#f44336;
+        transition: 1s;
+    }
+    nav .fas{
+        margin:10px;
+        font-size:22px;
+        color:#fff;
+        cursor:pointer;
+        display:block;
+
+    }
+    .nav-links ul{
+        padding:30px;
+    }
+
+
+}
+
+/* About us section code */
+
+.about_us{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+h1{
+    font-size:36px;
+    font-weight:600;
+}
+.about_us p{
+    color:#777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height:22px;
+    padding:10px;
+}
+
+
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.about-us-col{
+    flex-basis:31%;
+    background:#fff3f3;
+    border-radius:10px;
+    margin-bottom:5%;
+    padding: 20px 12px;
+    box-sizing:border-box;
+}
+
+h3{
+    text-align:center;
+    font-weight:600;
+    margin:10px 0;
+}
+
+.about-us-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction:column;
+    }
+}
+
+
+/* WINSTON-VIDEO */
+
+.Winston-video{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+}
+
+.Winston-video h1{
+    padding-bottom:40px;
+}
+
+
+@media(max-width:900px){
+    .Winston-video iframe{
+        width:90%;
+        padding-top:10px;
+    }
+
+}
+
+
+
+/* Trophies */
+
+/* Styling for the entire Trophies section */
+.Trophies {
+    min-height: 100vh;           /* Ensures minimum height is the height of the viewport */
+    width: 100%;                 /* Occupies full width of the parent */
+    margin: auto;                /* Centers the element if there's horizontal space */
+    text-align: center;          /* Centers inline elements */
+    padding-top: 50px;           /* Adds space to the top inside the element */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    background-repeat: no-repeat; /* Ensures background doesn't repeat */
+    background-attachment: fixed; /* Background doesn't scroll with the page */
+    position: relative;          /* Enables absolute positioning for child elements */
+}
+
+.Trophies h1 {
+    color: #fff;                /* Sets text color to white */
+}
+
+.Row_of_pics {
+    display: flex;              /* Uses flexible box layout */
+    flex-wrap: wrap;            /* Allows flex items to wrap onto multiple lines */
+    justify-content: space-between; /* Distributes space between flex items */
+}
+
+.row-col {
+    flex-basis: calc(33.333% - 20px); 
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    height: 286px;              /* Increased height by 30% */
+    border: 1px solid transparent; 
+}
+
+.row-col img {
+    width: 100%;
+    display: block;
+    height: 100%;               
+    object-fit: cover;          
+}
+
+.layer {
+    background: transparent;
+    height: calc(100% - 20px);  
+    width: calc(100% - 20px);   
+    position: absolute;         
+    top: 10px;                  
+    left: 10px;                 
+    z-index: 1;                 
+    transition: 0.5s;           
+    box-sizing: border-box;     
+}
+
+.row-col:hover .layer {
+    background: rgba(226, 0, 0, 0.7); 
+}
+
+.layer h3 {
+    width: 100%;                
+    font-weight: 500;           
+    color: #fff;                
+    font-size: 26px;            
+    bottom: 0;                  
+    left: 50%;                  
+    transform: translateX(-50%);
+    position: absolute;         
+    opacity: 0;                 
+    transition: 0.5s;           
+}
+
+.row-col:hover .layer h3 {
+    bottom: 49%;                
+    opacity: 1;                 
+}
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    text-align:center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom:25px;
+    margin-top:20px;
+    font-weight:600;
+}
+

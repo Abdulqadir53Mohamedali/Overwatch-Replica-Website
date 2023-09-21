@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overwatch Website design</title>
+
+    <!-- Styling links -->
+    <link rel = "stylesheet" href = "style.css">
+
+    <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Tilt+Prism&display=swap" rel="stylesheet">
+    
+    <!-- Icon Links from FontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    
+</head>
+<body>
+    <!-- Top of Homepage  -->
+    <!-- Header Section -->
+    <section class ="header">
+        <nav>
+            <!-- Logo -->
+            <a href="index.html"><img src="images/Overwatch-logo.png" ></a>
+            <!-- Navigation Bar -->
+            <div class = "nav-links" id = "navLinks">
+                <!-- Close Menu icon -->
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="" >HOME</a></li>
+                    <li> <a href="" >HEROES</a></li>
+                    <li> <a href="" >MAPS</a></li>
+                    <li> <a href="" >CINEMATICS</a></li>
+                </ul>
+            </div>
+            <!-- Open Menu Icon -->
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class ="text-box">
+        <h1> A Revolution in Team-Based Shooters</h1>
+        <p>Delve into the world of 'Overwatch' as we explore how Blizzard's innovative approach to character design,<br>game mechanics, and cooperative gameplay has ushered in a new era for team-based shooters</p>
+        <a href="" class ="Download-btn">Download Now</a>
+    </div>
+    </section>
+
+    <!-- About us -->
+    <section class = "about_us">
+        <h1>About us</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquid suscipit eligendi expedita, tenetur modi, autem beatae explicabo excepturi laborum sunt mollitia deleniti est accusantium vero officiis, placeat quo ea!</p>
+        
+        <div class = "row">
+            <div class="about-us-col">
+                <h3>Pioneers Of Gaming</h3>
+                <p>At Overwatch, we're not just a game; we're an experience. Crafting adrenaline-pumping moments with every match, we redefine competitive gaming.</p>
+    
+            </div>
+    
+            <div class="about-us-col">
+                <h3>Innovation And Excellence</h3>
+                <p>Through cutting-edge graphics and intuitive gameplay, Overwatch consistently pushes the boundaries of what online multiplayer games can be</p>
+    
+            </div>
+    
+            <div class="about-us-col">
+                <h3>A Community United</h3>
+                <p>Overwatch isn't just about the battles in-game; it's about the global community of passionate players and fans who make every victory meaningful.</p>
+    
+            </div>
+        </div>
+    
+    </section>
+
+
+    <!-- WINSTON-VID -->
+    <section class = "Winston-video">
+        <h1 >Are you ready to join hands with Overwatch ?</h1>
+        <iframe width="751" height="480" src="https://www.youtube.com/embed/pwFu8kEsUW4" title="Overwatch Cinematic Teaser | &quot;Are You With Us?&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    </section>
+  <!-- Trophies -->
+    <section class="Trophies">
+        <h1>Awards</h1>
+        <div class = "Row_of_pics">
+            <div class = "row-col">
+                <img src = "images/The_Game_Awards_2016.jpeg">
+                <div class ="layer">
+                    <h3>THE GAME AWARDS 2016</h3>
+                </div>
+            </div>
+            <div class = "row-col">
+                <img src = "images/DICE_AWARDS_2017.jpg">
+                <div class ="layer">
+                    <h3>D.I.C.E AWARD 2017</h3>
+                </div>
+            </div>
+            <div class = "row-col">
+                <img src = "images/Golden_Joystick_Awards.jpg">
+                <div class ="layer">
+                    <h3>GOLDEN JOYSTICK AWARD</h3>
+                </div>
+            </div>
+            <div class = "row-col">
+                <img src = "images/British_academy_game_awards.jpg">
+                <div class ="layer">
+                    <h3>BRITISH ACADEMY GAME AWARD</h3>
+                </div>
+            </div>
+            <div class = "row-col">
+                <img src = "images/Webby_awards.jpg">
+                <div class ="layer">
+                    <h3>WEBBY AWARD</h3>
+                </div>
+            </div>
+            <div class = "row-col">
+                <img src = "images/SXSW_Awards_2017.jpg">
+                <div class ="layer">
+                    <h3>SXSW AWARD</h3>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <section class = "footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima reprehenderit quos
+             illum a ipsa incidunt rem. <br>Ducimus natus eveniet ullam id hic vero, amet, 
+             quae cupiditate deserunt eum, sed voluptas.</p>
+    </section>
+     
+
+
+
+    <!-- JS toggle menu script  -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+
+
+    </script>
+    
+</body>
+</html>
+
+<!-- using website called fontawsome for the small icos such as bar or the closing window one -->
