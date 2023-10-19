@@ -225,7 +225,8 @@ h3{
 .Trophies {
     min-height: 100vh;           /* Ensures minimum height is the height of the viewport */
     width: 100%;                 /* Occupies full width of the parent */
-    margin: auto;                /* Centers the element if there's horizontal space */
+    margin: 50px;                /* Centers the element if there's horizontal space */
+    /* margin-bottom: 50px; */
     text-align: center;          /* Centers inline elements */
     padding-top: 50px;           /* Adds space to the top inside the element */
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
@@ -236,6 +237,7 @@ h3{
 
 .Trophies h1 {
     color: #fff;                /* Sets text color to white */
+    margin-bottom: 25px;
 }
 
 .Row_of_pics {
@@ -245,6 +247,7 @@ h3{
 }
 
 .row-col {
+    margin-bottom: 50px;
     flex-basis: calc(33.333% - 20px); 
     box-sizing: border-box;
     position: relative;
@@ -293,6 +296,11 @@ h3{
     bottom: 49%;                
     opacity: 1;                 
 }
+
+
+
+
+
 /* FOOTER */
 
 .footer{
