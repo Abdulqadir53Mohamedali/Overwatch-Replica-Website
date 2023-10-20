@@ -1,0 +1,131 @@
+
+body{
+    background-color: #004da7;
+}
+
+
+/* Navigation styles */
+nav {
+    color: black;
+    display: flex; /* Use flexbox for easier layout management */
+    padding: 2% 6%; /* Add some padding for spacing */
+    justify-content: space-between; /* Space out the child elements evenly */
+    align-items: center; /* Vertically center align the child elements */
+}
+
+nav img {
+    width: 150px; /* Set a fixed width for the nav logo */
+}
+
+.nav-links {
+    border: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+    text-align: right; /* Right align the nav links */
+    background-color: lightseagreen;
+}
+
+/* Nav links list styles */
+.nav-links ul li {
+
+    color: black; /* Set text color to white */
+    list-style: none; /* Remove default bullet points */
+    display: inline-block; /* Display list items in a line */
+    padding: 8px 12px; /*Add some padding around each link for better spacing */
+    position: relative; /* Set position to relative for pseudo-elements */
+}
+
+.nav-links ul li a {
+    color: black; /* Set anchor color to white */
+    text-decoration: none; /* Remove underlines from the links */
+    font-size: 13px; /* Set font size of the links */
+}
+
+/* Add a dynamic underline effect on hover for nav links */
+.nav-links ul li::after {
+    content: '';
+    width: 0%; /* Start width at 0 for the animation effect */
+    height: 2px; /* Set a fixed height for the underline */
+    background: #f44336; /* Color of the underline */
+    display: block;
+    margin: auto;
+    transition: 0.5s; /* Smooth transition for the hover effect */
+}
+
+.nav-links ul li:hover::after {
+    width: 100%; /* On hover, the underline stretches to full width */
+}
+
+
+nav .fas{
+    display:none;
+}
+
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size:27px;
+    }
+
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links{
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align:left;
+        z-index:2;
+        position: absolute;
+        background:#f44336;
+        transition: 1s;
+    }
+    nav .fas{
+        margin:10px;
+        font-size:22px;
+        color:#fff;
+        cursor:pointer;
+        display:block;
+
+    }
+    .nav-links ul{
+        padding:30px;
+    }
+
+
+}
+/* Hero Card Styles */
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-left: 100px;
+    /* flex-wrap: wrap; */
+}
+
+ 
+
+.Hero-cards{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.HC{
+    text-align: center;
+    background-color: lightblue;
+    border: 2px solid black;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+    flex: 1 1;
+}
+
+.HC img{
+    background-color: lightcyan;
+}
+#icon{
+    background-color: lightblue;
+}
