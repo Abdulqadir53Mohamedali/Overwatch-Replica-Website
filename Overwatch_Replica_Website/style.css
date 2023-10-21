@@ -225,8 +225,7 @@ h3{
 .Trophies {
     min-height: 100vh;           /* Ensures minimum height is the height of the viewport */
     width: 100%;                 /* Occupies full width of the parent */
-    margin: 50px;                /* Centers the element if there's horizontal space */
-    /* margin-bottom: 50px; */
+    margin-top: 50px;                 
     text-align: center;          /* Centers inline elements */
     padding-top: 50px;           /* Adds space to the top inside the element */
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
@@ -241,9 +240,9 @@ h3{
 }
 
 .Row_of_pics {
-    display: flex;              /* Uses flexible box layout */
-    flex-wrap: wrap;            /* Allows flex items to wrap onto multiple lines */
-    justify-content: space-between; /* Distributes space between flex items */
+    display: flex;             
+    flex-wrap: wrap;            
+    justify-content: space-between; 
 }
 
 .row-col {
@@ -252,50 +251,225 @@ h3{
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
-    height: 286px;              /* Increased height by 30% */
     border: 1px solid transparent; 
 }
 
 .row-col img {
     width: 100%;
     display: block;
-    height: 100%;               
-    object-fit: cover;          
+    height: auto;
+    object-fit: cover;
 }
 
 .layer {
     background: transparent;
-    height: calc(100% - 20px);  
-    width: calc(100% - 20px);   
-    position: absolute;         
-    top: 10px;                  
-    left: 10px;                 
-    z-index: 1;                 
-    transition: 0.5s;           
-    box-sizing: border-box;     
+    height: 100%;
+    width: 110%;
+    position: absolute;
+    margin-top: 0;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transition: 0.5s;
+    box-sizing: border-box;
+    opacity: 0; /* Initially hide the red layer */
 }
 
 .row-col:hover .layer {
-    background: rgba(226, 0, 0, 0.7); 
+    background: rgba(226, 0, 0, 0.7);
+    /* background-size: contain; */
+    opacity: 1; /* Show the red layer on hover */
 }
 
 .layer h3 {
-    width: 100%;                
-    font-weight: 500;           
-    color: #fff;                
-    font-size: 26px;            
-    bottom: 0;                  
-    left: 50%;                  
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
     transform: translateX(-50%);
-    position: absolute;         
-    opacity: 0;                 
-    transition: 0.5s;           
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .row-col:hover .layer h3 {
-    bottom: 49%;                
-    opacity: 1;                 
+    bottom: 49%;
+    opacity: 1;
 }
+
+
+/* Award ID's */
+
+/* SXSW award */
+#sxsw{
+    background: transparent;
+    height: 63%;
+    width: 110%;
+    position: absolute;
+    margin-top: 0;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transition: 0.5s;
+    box-sizing: border-box;
+    opacity: 0; /* Initially hide the red layer */
+}
+
+.row-col:hover #sxsw{
+    background: rgba(226, 0, 0, 0.7);
+    /* background-size: contain; */
+    opacity: 1; /* Show the red layer on hover */
+
+}
+
+#sxsw h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.row-col:hover #sxsw h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Game award 2016 ID */
+
+#Game-Awards{
+    background: transparent;
+    height: 67%;
+    width: 110%;
+    position: absolute;
+    margin-top: 0;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transition: 0.5s;
+    box-sizing: border-box;
+    opacity: 0; /* Initially hide the red layer */
+}
+
+.row-col:hover #Game-Awards{
+    background: rgba(226, 0, 0, 0.7);
+    /* background-size: contain; */
+    opacity: 1; /* Show the red layer on hover */
+
+}
+
+#Game-Awards h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.row-col:hover #Game-Awards h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+
+
+/* Golden joystick */
+
+#joystick{
+    background: transparent;
+    height: 67%;
+    width: 110%;
+    position: absolute;
+    margin-top: 0;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transition: 0.5s;
+    box-sizing: border-box;
+    opacity: 0; /* Initially hide the red layer */
+}
+
+.row-col:hover #joystick{
+    background: rgba(226, 0, 0, 0.7);
+    /* background-size: contain; */
+    opacity: 1; /* Show the red layer on hover */
+
+}
+
+#joystick h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.row-col:hover #joystick h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Brsitish Academy Game awards */
+
+
+#BAG{
+    background: transparent;
+    height: 75%;
+    width: 110%;
+    position: absolute;
+    margin-top: 0;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transition: 0.5s;
+    box-sizing: border-box;
+    opacity: 0; /* Initially hide the red layer */
+}
+
+.row-col:hover #BAG{
+    background: rgba(226, 0, 0, 0.7);
+    /* background-size: contain; */
+    opacity: 1; /* Show the red layer on hover */
+
+}
+
+#BAG h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.row-col:hover #BAG h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+
 
 
 
